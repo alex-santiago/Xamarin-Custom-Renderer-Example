@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+    xmlns:local="clr-namespace:CustomRenderer;assembly=CustomRenderer"
+    x:Class="SampleCustomRenderer.SampleCustomRendererPage">
+    <StackLayout Orientation="Vertical" Margin="10">
+        <Label Text="Original Xamarin Forms Entry" VerticalOptions="Start" HorizontalOptions="Start" />
+        <Entry Text="Xamarin" />
+        <Label Text="Derived Entry" VerticalOptions="Start" HorizontalOptions="Start" />
+        <local:MyEntry x:Name="Test" Text="Custom"></local:MyEntry>
+        <Label Text="Custom Rendered Entry" VerticalOptions="Start" HorizontalOptions="Start" />
+        <local:CustomEntry Text="Custom Rendered" />
+    </StackLayout>
+</ContentPage>
